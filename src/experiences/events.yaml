@@ -4,7 +4,13 @@
   technologies: [Docker, ansible, terraform, packer, Azure, AWS, Grafana, Prometheus, Jenkins, Azure DevOPS]
 - name: Software Engineer
   company: Pole emploi DSI
-  tasks: []
+  tasks:
+    - Assure le rôle de <span lang="en">scrum master</span>
+    - l'équipe de développement lors de revues de code et de sessions de <span lang="en">pair programming</span>
+    - Mise en conformité du <span lang="en">framework</span> <a href="https://valor-software.com/ngx-bootstrap/#/">ngx-bootstrap</a> au RGAA (<span lang="en">fork</span> interne)
+    - Livraison des applications de démonstrations et de test sur Kubernetes
+    - Mise en place de l'intégration continue
+    - Réalisation des tests unitaires et d'intégration
   technologies: [concourse, nx, angular]
 
         # <div className="body">
