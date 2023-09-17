@@ -1,8 +1,8 @@
 - name: DevOPS Engineer
   company: TechSoft 3D
   tasks: []
-  technologies: []
+  technologies: [Docker, ansible, terraform, packer, Azure, AWS, Grafana, Prometheus, Jenkins, Azure DevOPS]
 - name: Software Engineer
   company: Pole emploi DSI
   tasks: []
-  technologies: []
+  technologies: [concourse, nx, angular]
