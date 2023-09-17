@@ -1,6 +1,11 @@
 import './Events.css'
+import events from './experiences/events.json?url'
 
 function Events() {
+  console.log(events);
+
+  fetch(events).then(result => console.log(result));
+
   return (
     <div>
         <div id="app">

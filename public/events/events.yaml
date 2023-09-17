@@ -2,54 +2,57 @@
   company: TechSoft 3D
   startDate: 2021-11-01
   tasks:
-    - Monitoring setup
+    - Set ths monitoring stack
+    - Maintain the existing system with IaC
+    - Azure DevOPS CICD / Jenkins CICD
+    - Azure & AWS
   technologies: [Docker, ansible, terraform, packer, Azure, AWS, Grafana, Prometheus, Jenkins, Azure DevOPS]
-#             <li>Monitoring setup with grafana & prometheus</li>
-#             <li>Infrastructure management with terraform and ansible</li>
-#             <li>Azure DevOPS CICD / Jenkins CICD</li>
-#             <li>Azure & AWS</li>
 - name: Technical Leader
   company: Pole emploi DSI - Accessibility team
   startDate: 2021-01-01
   endDate: 2021-10-31
   tasks:
-    - Assure le rôle de <span lang="en">scrum master</span>
-    - l'équipe de développement lors de revues de code et de sessions de <span lang="en">pair programming</span>
-    - Mise en conformité du <span lang="en">framework</span> <a href="https://valor-software.com/ngx-bootstrap/#/">ngx-bootstrap</a> au RGAA (<span lang="en">fork</span> interne)
-    - Livraison des applications de démonstrations et de test sur Kubernetes
-    - Mise en place de l'intégration continue
-    - Réalisation des tests unitaires et d'intégration
+    - Scrum master
+    - Run code review and pair programming sessions
+    - Ensure common angular library's RGAA (French WCAG subset) compliance 
+    - Deploy & Test on Kuebernetes
+    - Set the CICD
+    - Unit & Functional tests setup
   technologies: [Angular, Concourse, monorepo NX, Jest, Playwright, Cypress, Quarkus, Mockserver, JPA, PostgreSQL, Kubernetes, Docker, Material design, Bootstrap]
 - name: Software Engineer
   startDate: 2019-01-01
-  endDate: 2020-31-12
+  endDate: 2020-12-31
   company: Pole emploi DSI - pole-emploi.io
   tasks:
-    - Conception et développement du <span lang="en">backend</span>
-    - Intégration des maquettes du graphiste en <span lang="en">mobile first</span>
-    - Mise en place des tests d'intégration
-    - Mise en place du Storybook de l'équipe
-    - Réalisation de la migration de l'environnement depuis des VM vers le <span lang="en">cloud</span> (kubernetes)
-    - Sensibilisation de l'équipe à l'accessibilité numérique
-    - Prise en charge du chantier d'automatisation de l'équipe et initiation de l'équipe au TDD / tests d'intégrations
+    - Develop the java backend
+    - Develop the angular frontend
+    - Develop the stencil design system
+    - Implemented the mockups in a mobile first approach
+    - Set the integration tests
+    - Set the storybook
+    - Set the CICD pipelines
+    - Migrated the app from VMs to kubernetes
+    - Trained the team on accessibility compliance
+    - Trained the team on TDD
   technologies: [Angular, Stencil, Jenkins, GitlabCI, Storybook, Cypress, Postman, Weblogic, PostgreSQL, Kubernetes, Docker, Flyway, Material design]
 - name: Software Engineer, then Technical leader
   company: Pole emploi DSI - Data science team
+  startDate: 2016-09-01
+  endDate: 2018-12-31
   tasks:
-    - Equipe gagnante du hackathon design4green (section pro) 2017 & 2018
-    - Développement d'une application interne de gestion des compétences
+    - Participate & Win the design4green hackathon (pro teams) 2017 & 2018
     - Encadrement et accompagnement des collaborateurs, revues de codes et présentations techniques
-    - Mise en place de <span lang="en">pipelines</span> d'intégration continue
-    - Conception et développement de composants transverse à la DSI
-    - Mise en place des différentes applications vitrines de l'équipe
+    - Set the CICD pipelines 
+    - Develop shareable component in stencil
+    - Develop the team various frontend with accurate data vizualisations
+    - Develop a skill management application
   technologies: [Angular, Stencil, Jenkins, Karma, Jest, Protractor, Design System, Material design, Bootstrap, Dataviz (d3 / viz.js / antv)]
 - name: Software Engineer Intern
   company: Pole emploi DSI - Accessibility team 
   startDate: 2015-09-01
-  endDate: 2016-31-08
+  endDate: 2016-08-31
   tasks:
     - Creation of a bug tracking app for the team
-    - 
   technologies: [Angularjs, Gulp, Karma, NodeJS, MySQL, Express]
 
         #     <div className="section__head">
