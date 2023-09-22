@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../Footer";
-import Header from "../Header";
+import Footer from "../components/Footer.tsx";
+import Header from "../components/Header.tsx";
 import tiling from "../assets/tiling_forest.png";
 
 export function Root() {
