@@ -1,0 +1,62 @@
+- title: codewars-python
+  main_stack: python
+  stacks: [python]
+  repository: https://github.com/benmtz/codewars-python
+  content: |
+    Solutions de codewars en python
+
+- title: codewars-dart
+  main_stack: dart
+  stacks: [dart]
+  repository: https://github.com/benmtz/codewars-dart
+  content: |
+    Solutions de codewars en dart
+
+- title: codewars-rust
+  main_stack: rust
+  stacks: [rust]
+  repository: https://github.com/benmtz/codewars-rust
+  content: |
+    Solutions de codewars en rust
+
+- title: codewars-typescript
+  main_stack: typescript
+  stacks: [typescript]
+  repository: https://github.com/benmtz/codewars-typescript
+  content: |
+    Solutions de codewars en typescript
+
+- title: codewars-kotlin
+  main_stack: kotlin
+  stacks: [kotlin]
+  repository: https://github.com/benmtz/codewars-kotlin
+  content: |
+    Solutions de codewars en kotlin
+
+- title: Le chaudron
+  stacks: [strapi, react, docker]
+  content: Site vitrine pour un restaurant local
+  repository: https://gitlab.com/IB3n/chaudron
+
+- title: npm-resource
+  stacks: [concourse, docker, rust, npm]
+  repository: https://github.com/benmtz/npm-resource
+  content: |-
+    Ressource-type concourse écrite en rust, le projet met en place un
+    monorepo nx, des tests d'intégrations en javascript et des tests
+    unitaires en rust
+
+- title: birthday-greetings-kata-rust
+  stacks: [rust,docker]
+  repository: https://github.com/benmtz/birthday-greetings-kata-rust
+  content: |
+    Implémentation du
+    <a href="http://matteo.vaccari.name/blog/archives/154" target="_blank" rel="noopener noreferer">kata des anniversaire</a>
+    de Matteo Vaccari en utilisant le pattern hexagonal
+
+- title: role-button
+  stacks: [angular, nx]
+  repository: https://github.com/benmtz/role-button
+  content: |
+    Librairie de correction d'accessibilité numérique concernant les
+    éléments avec l'attribut role="button"
