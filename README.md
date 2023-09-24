@@ -1,3 +1,6 @@
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=benmtz_b-mertz.com&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=benmtz_b-mertz.com)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=benmtz_b-mertz.com&metric=coverage)](https://sonarcloud.io/summary/new_code?id=benmtz_b-mertz.com)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
