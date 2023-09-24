@@ -1,14 +1,7 @@
-
-type project = {
-    title: string,
-    main_stack: string,
-    content: string,
-    link: string,
-    stacks: string[],
-};
+import {Project} from "../models/Project.ts";
 
 type ProjectCardProps = {
-    project: project,
+    project: Project,
 };
 
 export function ProjectCard({
@@ -29,7 +22,7 @@ export function ProjectCard({
                 <div className='leading-5'>{project.content}</div>
             </ul>
             <div className='pt-2 pb-4 text-sm leading-4'>
-                {project.stacks.map(t => <li key={t} className='list-disc'>{t}</li>)}
+                {project.stacks.map(t => <li key={project.title + t} className='list-disc'>{t}</li>)}
             </div>
         </>
     )
