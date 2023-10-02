@@ -1,8 +1,8 @@
 
 resource "aws_s3_bucket" "b-mertz" {
-  bucket = "b-mertz"
+  bucket = local.s3_name
   tags = {
-    Name        = "b-mertz"
+    Name        = local.s3_name
     Environment = "Prod"
   }
 }
@@ -45,25 +45,19 @@ resource "aws_s3_bucket_acl" "b-mertz" {
   acl    = "public-read"
 }
 module "dir" {
-  source  = "hashicorp/dir/template"
-  version = "1.0.2"
-  base_dir = "../dist"
+  source   = "hashicorp/dir/template"
+  version  = "1.0.2"
+  base_dir = var.static_dir
 }
 
-# module "template_files" {
-#   source = "../dist"
-#   base_dir = "../dist"
-
-# }
-
 resource "aws_s3_object" "file" {
-  for_each = module.dir.files
+  for_each     = module.dir.files
   bucket       = aws_s3_bucket.b-mertz.id
   key          = each.key
   content_type = each.value.content_type
-  source  = each.value.source_path
-  content = each.value.content
-  etag = each.value.digests.md5
-  acl = "public-read"
+  source       = each.value.source_path
+  content      = each.value.content
+  etag         = each.value.digests.md5
+  acl          = "public-read"
 }
 
