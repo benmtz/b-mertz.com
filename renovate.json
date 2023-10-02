@@ -3,6 +3,24 @@
   "extends": [
     "config:recommended"
   ],
-  "prHourlyLimit": 3,
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "lockFileMaintenance": {
+        "enabled": false
+      },
+      "packageRules": [
+        {
+          "groupName": "all dependencies",
+          "groupSlug": "all",
+          "matchPackagePatterns": [
+            "*"
+          ]
+        }
+      ],
+      "separateMajorMinor": false
+    }
+  ],
   "updatePinnedDependencies": true
 }
