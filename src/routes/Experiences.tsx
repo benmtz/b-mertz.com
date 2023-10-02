@@ -1,10 +1,13 @@
 
 import { useEffect, useState } from "react";
 import ExperienceCard from "../components/ExperienceCard";
+import {Experience} from "../models/Experience.ts";
+
+
 
 export function Experiences() {
     const lang = "fr_FR"
-    const [events, setEvents] = useState([]);
+    const [events, setEvents] = useState<Experience[]>([]);
 
     useEffect(() => {
         if (lang == "fr_FR") {
@@ -16,7 +19,7 @@ export function Experiences() {
 
     return (
         <>
-            {events.map((ev, eventIndex) => <ExperienceCard experience={ev} key={eventIndex} />)}
+            {events.map((exp) => <ExperienceCard experience={exp} key={exp.startDate} />)}
         </>
     )
 }

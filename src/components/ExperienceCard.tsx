@@ -1,12 +1,4 @@
-
-type Experience = {
-    name: string,
-    company: string,
-    startDate: string,
-    endDate: string,
-    tasks: string[],
-    technologies: string[]
-};
+import {Experience} from "../models/Experience.ts";
 
 type ExperienceCardProps = {
     experience: Experience,
@@ -28,7 +20,7 @@ export function ExperienceCard({
                 </div>
             </h3>
             <ul className='pl-4 leading-5'>
-                {experience.tasks.map(t => <li key={t} className='list-disc'>{t}</li>)}
+                {experience.tasks.map(t => <li key={experience.startDate + t} className='list-disc'>{t}</li>)}
             </ul>
             <div className='pt-2 pb-4 text-sm leading-4'>
                 <span>Technologies:</span>
