@@ -6,28 +6,28 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Root from "./routes/root.tsx";
-import Experiences from './routes/experiences.tsx';
+import Experiences from './routes/Experiences.tsx';
 import Projects from './routes/Projects.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Root/>,
     children: [
       {
         path: "experiences",
-        element: <Experiences />,
+        element: <Experiences/>,
       },
       {
         path: "projects",
-        element: <Projects />,
+        element: <Projects/>,
       }
     ]
-  }, 
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
