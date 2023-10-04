@@ -20,11 +20,14 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: "@storybook/react-vite",
-    options: {},
+    options: {
+    },
   },
   docs: {
     autodocs: "tag",
   },
-
+  staticDirs: [
+    {from: "../src/assets", to: "/assets"}
+  ]
 };
 export default config;

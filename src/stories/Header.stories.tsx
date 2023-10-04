@@ -17,7 +17,41 @@ export default meta;
  * See https://storybook.js.org/docs/react/api/csf
  * to learn how to use render functions.
  */
+
+const whiteBox = () => <div className="w-full h-20 bg-white" />
+
 export const Default: Story = {
-  name: 'default',
-  render: () => <BrowserRouter><Header /></BrowserRouter>,
+  name: 'With tilings',
+  render: () => <BrowserRouter>
+    <Header tile={"circuit"}/>
+    {whiteBox()}
+    <Header tile={"forest"}/>
+    {whiteBox()}
+    <Header tile={"multicolor_waves"}/>
+    {whiteBox()}
+    <div className={"flex flex-row"}>
+      <div className={"flex-1 p-4"}>
+        <Header tile={"multicolor_waves"}/>
+      </div>
+      <div className={"flex-1 p-4"}>
+        <Header tile={"multicolor_waves"}/>
+      </div>
+    </div>
+    {whiteBox()}
+    <div className={"flex flex-row"}>
+      <div className={"flex-1 p-4"}>
+        <Header tile={"multicolor_waves"}/>
+      </div>
+      <div className={"flex-1 p-4"}>
+        <Header tile={"multicolor_waves"}/>
+      </div>
+      <div className={"flex-1 p-4"}>
+        <Header tile={"multicolor_waves"}/>
+      </div>
+      <div className={"flex-1 p-4"}>
+        <Header tile={"multicolor_waves"}/>
+      </div>
+    </div>
+    </BrowserRouter>,
+
 };
