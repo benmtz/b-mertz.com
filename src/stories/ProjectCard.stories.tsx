@@ -1,7 +1,6 @@
 // Button.stories.ts|tsx
 
-import type { Meta, StoryObj } from '@storybook/react';
-import { withKnobs, text, number } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 import ProjectCard from "../components/ProjectCard.tsx";
 
@@ -33,7 +32,6 @@ export const asDynamicVariables = () => {
   const main_stack = text('main_stack', 'Main Stack')
   const content = text('content','content');
   const link = text('link','link');
-  const stacks = text('stacks','stacks');
 
   return <ProjectCard project={{title, content, main_stack, link, stacks: []}}/>;
 };

@@ -6,7 +6,7 @@ import tiling from "../assets/tiling_forest.png";
 export function Root() {
   return (
     <div className='h-full w-full bg-repeat bg-mj box-content' style={{ backgroundImage: `url(${tiling})` }}>
-      <Header />
+      <Header tile={"forest"}/>
       <main className="bg-white w-full">
         <div className="container p-4 m-auto">
           <Outlet />
