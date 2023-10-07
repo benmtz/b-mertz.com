@@ -6,12 +6,18 @@ resource "aws_cloudfront_distribution" "this" {
   origin {
     origin_id   = local.s3_origin_id
     domain_name = local.s3_domain_name
+
     custom_origin_config {
       http_port              = 80
       https_port             = 443
       origin_protocol_policy = "http-only"
       origin_ssl_protocols   = ["TLSv1.2"]
+      acm_certificate_arn = "arn:aws:acm:eu-west-3:455503544814:certificate/ddf3560c-4ea6-4f4a-8e90-f8c8b16c1e79"
     }
+
+
+
+
   }
 
   default_cache_behavior {
