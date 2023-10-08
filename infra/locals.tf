@@ -1,4 +1,5 @@
 locals {
+  dns_name       = "b-mertz.com"
   s3_name        = "bmertz"
   region         = "eu-west-3"
   s3_origin_id   = "${local.s3_name}-origin"
@@ -7,4 +8,14 @@ locals {
 
 variable "static_dir" {
   default = "../dist"
+}
+
+variable "cloudflare_account_id" {
+  type      = string
+  sensitive = true
+}
+
+variable "cloudflare_api_token" {
+  type      = string
+  sensitive = true
 }
