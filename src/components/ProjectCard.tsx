@@ -1,30 +1,24 @@
 import {Project} from "../models/Project.ts";
 
 type ProjectCardProps = {
-    project: Project,
+  project: Project,
+  className?: string
 };
 
 export function ProjectCard({
-    project,
+  project,
+  className,
 }: ProjectCardProps) {
     return (
-        <>
-            <a href={project.link}>link</a>
-            <h3 className='pb-2'>
-                <div>
-                    <div className='font-semibold'>{project.title}</div>
-                    <div className='italic font-thin leading-3'>{project.main_stack}</div>
-                </div>
-                <div>
-                </div>
+        <div className={`${className} p-4 flex flex-col bg-white shadow`}>
+            <h3 className='pb-2 font-semibold'>
+                <a href={project.repository}>{project.title}</a>
             </h3>
-            <ul className='pl-4 leading-5'>
-                <div className='leading-5'>{project.content}</div>
+            <div className='leading-5 flex-grow flex-1' dangerouslySetInnerHTML={{"__html": project.content}}></div>
+            <ul className='pt-2 pb-4 text-sm leading-4 flex flex-row'>
+                {project.stacks.map(t => <li key={project.title + t} className='list-none mr-1'>{t}</li>)}
             </ul>
-            <div className='pt-2 pb-4 text-sm leading-4'>
-                {project.stacks.map(t => <li key={project.title + t} className='list-disc'>{t}</li>)}
-            </div>
-        </>
+        </div>
     )
 }
 

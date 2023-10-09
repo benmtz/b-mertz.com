@@ -8,7 +8,7 @@ type Props = {
 function Header({tile}: Props) {
   return (
     <div className='relative'>
-      <div className='absolute h-full w-full z-0 bg-repeat bg-mj box-content' style={{ backgroundImage: `url(/assets/tiling_${tile}.png)` }} />
+      <div className='absolute h-full w-full z-0 bg-repeat bg-mj box-content' style={{ backgroundImage: `url(/tiles/tiling_${tile}.png)` }} />
       <div className="relative w-full h-full z-1 flex backdrop-brightness-50">
         <ul className="text-white flex container p-4 font-bold">
           <li className='p-2'><Link to="experiences">Experiences</Link></li>

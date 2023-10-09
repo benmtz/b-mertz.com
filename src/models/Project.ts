@@ -2,6 +2,6 @@ export interface Project {
   title: string,
   main_stack: string,
   content: string,
-  link: string,
+  repository: string,
   stacks: string[],
 }

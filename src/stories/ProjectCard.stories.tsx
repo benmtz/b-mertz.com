@@ -31,7 +31,7 @@ export const asDynamicVariables = () => {
   const title = text('Title', 'James');
   const main_stack = text('main_stack', 'Main Stack')
   const content = text('content','content');
-  const link = text('link','link');
+  const repository = text('link','link');
 
-  return <ProjectCard project={{title, content, main_stack, link, stacks: []}}/>;
+  return <ProjectCard project={{title, content, main_stack, repository, stacks: []}}/>;
 };

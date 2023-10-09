@@ -2,36 +2,31 @@
   main_stack: python
   stacks: [python]
   repository: https://github.com/benmtz/codewars-python
-  content: |
-    Solutions de codewars en python
+  content: Python coding exercises
 
 - title: codewars-dart
   main_stack: dart
   stacks: [dart]
   repository: https://github.com/benmtz/codewars-dart
-  content: |
-    Solutions de codewars en dart
+  content: Dart coding exercises
 
 - title: codewars-rust
   main_stack: rust
   stacks: [rust]
   repository: https://github.com/benmtz/codewars-rust
-  content: |
-    Solutions de codewars en rust
+  content: Rust coding exercises
 
 - title: codewars-typescript
   main_stack: typescript
   stacks: [typescript]
   repository: https://github.com/benmtz/codewars-typescript
-  content: |
-    Solutions de codewars en typescript
+  content: Typescript coding exercises
 
 - title: codewars-kotlin
   main_stack: kotlin
   stacks: [kotlin]
   repository: https://github.com/benmtz/codewars-kotlin
-  content: |
-    Solutions de codewars en kotlin
+  content: Kotlin coding exercises
 
 - title: Le chaudron
   stacks: [strapi, react, docker]
