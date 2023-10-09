@@ -15,9 +15,9 @@ export function Projects() {
   }, [])
 
   return (
-    <>
-      {projects.map((project) => <ProjectCard project={project} key={project.title}/>)}
-    </>
+    <div className={"grid md:grid-cols-4 sm:grid-cols-2 gap-1"}>
+      {projects.map((project) => <ProjectCard className={"mr-3 mb-3 flex-grow"} project={project} key={project.title}/>)}
+    </div>
   )
 }
 

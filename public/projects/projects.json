@@ -6,7 +6,7 @@
       "python"
     ],
     "repository": "https://github.com/benmtz/codewars-python",
-    "content": "Solutions de codewars en python\n"
+    "content": "Python coding exercises"
   },
   {
     "title": "codewars-dart",
@@ -15,7 +15,7 @@
       "dart"
     ],
     "repository": "https://github.com/benmtz/codewars-dart",
-    "content": "Solutions de codewars en dart\n"
+    "content": "Dart coding exercises"
   },
   {
     "title": "codewars-rust",
@@ -24,7 +24,7 @@
       "rust"
     ],
     "repository": "https://github.com/benmtz/codewars-rust",
-    "content": "Solutions de codewars en rust\n"
+    "content": "Rust coding exercises"
   },
   {
     "title": "codewars-typescript",
@@ -33,7 +33,7 @@
       "typescript"
     ],
     "repository": "https://github.com/benmtz/codewars-typescript",
-    "content": "Solutions de codewars en typescript\n"
+    "content": "Typescript coding exercises"
   },
   {
     "title": "codewars-kotlin",
@@ -42,7 +42,7 @@
       "kotlin"
     ],
     "repository": "https://github.com/benmtz/codewars-kotlin",
-    "content": "Solutions de codewars en kotlin\n"
+    "content": "Kotlin coding exercises"
   },
   {
     "title": "Le chaudron",
