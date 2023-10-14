@@ -23,33 +23,33 @@ const whiteBox = () => <div className="w-full h-20 bg-white" />
 export const Default: Story = {
   name: 'With tilings',
   render: () => <BrowserRouter>
-    <Header tile={"circuit"}/>
+    <Header/>
     {whiteBox()}
-    <Header tile={"forest"}/>
+    <Header/>
     {whiteBox()}
-    <Header tile={"multicolor_waves"}/>
+    <Header/>
     {whiteBox()}
     <div className={"flex flex-row"}>
       <div className={"flex-1 p-4"}>
-        <Header tile={"multicolor_waves"}/>
+        <Header/>
       </div>
       <div className={"flex-1 p-4"}>
-        <Header tile={"multicolor_waves"}/>
+        <Header/>
       </div>
     </div>
     {whiteBox()}
     <div className={"flex flex-row"}>
       <div className={"flex-1 p-4"}>
-        <Header tile={"multicolor_waves"}/>
+        <Header/>
       </div>
       <div className={"flex-1 p-4"}>
-        <Header tile={"multicolor_waves"}/>
+        <Header/>
       </div>
       <div className={"flex-1 p-4"}>
-        <Header tile={"multicolor_waves"}/>
+        <Header/>
       </div>
       <div className={"flex-1 p-4"}>
-        <Header tile={"multicolor_waves"}/>
+        <Header/>
       </div>
     </div>
     </BrowserRouter>,
