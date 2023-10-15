@@ -3,9 +3,6 @@ import Footer from "../components/Footer.tsx";
 import Header from "../components/Header.tsx";
 
 export function Root() {
-
-  // const currentTheme = "waves"
-
   return (
     <div className='relative h-full bg-repeat bg-mj box-content' style={{ backgroundImage: `url(/tiles/tiling_multicolor_waves.png)`}}>
       <Header/>
