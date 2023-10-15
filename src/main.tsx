@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
+  createBrowserRouter, redirectDocument,
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
@@ -13,6 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root/>,
+    loader: () => {
+      if (location.pathname === "/") {
+        return redirectDocument("/experiences")
+      }
+      return null
+    },
     children: [
       {
         path: "experiences",
