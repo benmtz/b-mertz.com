@@ -12,7 +12,7 @@ export function Root() {
       <main className="relative">
         <div className="top-0 h-2 sticky z-1 backdrop-brightness-50" />
         <div className="bg-gray-50 sticky">
-          <div className="container p-4 py-16 m-auto">
+          <div className="container p-4 py-16 m-auto min-h-screen">
             <Outlet />
           </div>
         </div>
