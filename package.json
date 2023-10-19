@@ -14,6 +14,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "builder-pattern": "^2.2.0",
+    "octokit": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
