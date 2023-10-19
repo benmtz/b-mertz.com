@@ -1,22 +1,22 @@
 import {useEffect, useState} from "react";
 import ProjectCard from "../components/ProjectCard.tsx";
-import {Project} from "../models/Project.ts";
+import {getProjects, ProjectsByType, splitProjectsByType} from "../models/Project.ts";
 
 export function Projects() {
-  const lang = "fr_FR"
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<ProjectsByType>({training: [], project: []});
 
   useEffect(() => {
-    if (lang == "fr_FR") {
-      fetch(`/projects/projects.json`).then(res => res.json()).then(d => setProjects(d));
-    } else {
-      fetch(`/projects/projects.json`).then(res => res.json()).then(d => setProjects(d));
-    }
+    getProjects().then(splitProjectsByType).then(d => setProjects(d))
   }, [])
 
   return (
-    <div className={"grid md:grid-cols-4 sm:grid-cols-2 gap-1"}>
-      {projects.map((project) => <ProjectCard className={"mr-3 mb-3 flex-grow"} project={project} key={project.title}/>)}
+    <div>
+      <h2>Training</h2>
+      <p>I usually learn new programming languages by training on codewars exercises before creating real projects</p>
+      <div className={"grid md:grid-cols-4 sm:grid-cols-2 gap-1"}>
+        {projects.training.map((project) => <ProjectCard className={"mr-3 mb-3 flex-grow"} project={project}
+                                                         key={project.title}/>)}
+      </div>
     </div>
   )
 }
