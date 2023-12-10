@@ -1,0 +1,6 @@
+quiet: false
+format: table
+vulnerability:
+  type:
+    - os
+    - library
