@@ -14,6 +14,7 @@ jobs:
           npm run build -- --outDir infra/static
         name: Build the application app
       - run: |
+          terraform state rm cloudflare_record.cloudfront_cname
           terraform init
           terraform fmt --check
           terraform validate
