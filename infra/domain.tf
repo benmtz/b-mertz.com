@@ -1,12 +1,11 @@
 data "cloudflare_zone" "zone" {
-  name       = local.dns_name
-  account_id = var.cloudflare_account_id
+  name = local.dns_name
 }
 
-resource "cloudflare_record" "cloudfront_cname" {
+resource "cloudflare_dns_record" "cloudfront_cname" {
   name    = "@"
   type    = "CNAME"
-  value   = aws_cloudfront_distribution.this.domain_name
+  content = aws_cloudfront_distribution.this.domain_name
   ttl     = 3600
   zone_id = data.cloudflare_zone.zone.id
 }
