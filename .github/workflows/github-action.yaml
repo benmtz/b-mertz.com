@@ -17,7 +17,6 @@ jobs:
           terraform init
           terraform fmt --check
           terraform validate
-          terraform state rm cloudflare_record.cloudfront_cname
           terraform plan -var static_dir=static -out plan
         working-directory: infra
         name: Prepare the tf plan
