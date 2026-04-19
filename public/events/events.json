@@ -1,26 +1,33 @@
 [
   {
+    "name": "Senior Software Engineer",
+    "company": "TechSoft 3D",
+    "startDate": "2024-10-01T00:00:00Z",
+    "tasks": [
+      "DevOps representative in the software team",
+      "Published web packages to npm",
+      "Planned open-sourcing of web components on GitHub",
+      "Triple-nine CI/CD stability, CI time reduced by ~50%",
+      "Fixed critical bugs leading to 60% workflow speed improvement",
+      "Released ARM64 product build",
+      "Set up iterative static analysis on the product",
+      "Set up dev preview environments"
+    ],
+    "technologies": ["TypeScript", "Lit", "C++", "React", "CSS", "GitHub Actions", "Jenkins"]
+  },
+  {
     "name": "DevOPS Engineer",
     "company": "TechSoft 3D",
     "startDate": "2021-11-01T00:00:00Z",
+    "endDate": "2024-10-01T00:00:00Z",
     "tasks": [
-      "Set ths monitoring stack",
-      "Maintain the existing system with IaC",
-      "Azure DevOPS CICD / Jenkins CICD",
-      "Azure & AWS"
+      "IaC for Windows, macOS & Linux CI agents",
+      "Pipeline support across teams",
+      "Added static analysis to CI pipelines",
+      "Azure DevOps pipelines with GPU support",
+      "ARM64 Linux agents setup on AWS"
     ],
-    "technologies": [
-      "Docker",
-      "ansible",
-      "terraform",
-      "packer",
-      "Azure",
-      "AWS",
-      "Grafana",
-      "Prometheus",
-      "Jenkins",
-      "Azure DevOPS"
-    ]
+    "technologies": ["Docker", "Ansible", "Terraform", "Packer", "Azure", "AWS", "Grafana", "Prometheus", "Jenkins", "Azure DevOps", "vSphere"]
   },
   {
     "name": "Technical Leader",
