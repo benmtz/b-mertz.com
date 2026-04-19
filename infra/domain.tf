@@ -1,5 +1,7 @@
 data "cloudflare_zone" "zone" {
-  name = local.dns_name
+  filter = {
+    name = local.dns_name
+  }
 }
 
 resource "cloudflare_dns_record" "cloudfront_cname" {
