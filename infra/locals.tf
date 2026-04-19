@@ -1,5 +1,5 @@
 locals {
-  dns_name       = "b-mertz.com"
+  dns_name       = "cv.benjamin-mertz.com"
   s3_name        = "bmertz"
   region         = "eu-west-3"
   s3_origin_id   = "${local.s3_name}-origin"
