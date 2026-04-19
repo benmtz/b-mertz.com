@@ -38,7 +38,7 @@
       "Scrum master",
       "Run code review and pair programming sessions",
       "Ensure common angular library's RGAA (French WCAG subset) compliance",
-      "Deploy & Test on Kuebernetes",
+      "Deploy & Test on Kubernetes",
       "Set the CICD",
       "Unit & Functional tests setup"
     ],
@@ -65,14 +65,14 @@
     "endDate": "2020-12-31T00:00:00Z",
     "company": "Pole emploi DSI - pole-emploi.io",
     "tasks": [
-      "Develop the java backend",
-      "Develop the angular frontend",
-      "Develop the stencil design system",
-      "Implemented the mockups in a mobile first approach",
-      "Set the integration tests",
-      "Set the storybook",
+      "Develop the Java backend",
+      "Develop the Angular frontend",
+      "Develop the Stencil design system",
+      "Implement the mockups in a mobile first approach",
+      "Set up integration tests",
+      "Set up Storybook",
       "Set the CICD pipelines",
-      "Migrated the app from VMs to kubernetes",
+      "Migrate the app from VMs to Kubernetes",
       "Trained the team on accessibility compliance",
       "Trained the team on TDD"
     ],
@@ -99,10 +99,10 @@
     "endDate": "2018-12-31T00:00:00Z",
     "tasks": [
       "Participate & Win the design4green hackathon (pro teams) 2017 & 2018",
-      "Encadrement et accompagnement des collaborateurs, revues de codes et présentations techniques",
+      "Team mentoring, code reviews and technical presentations",
       "Set the CICD pipelines",
-      "Develop shareable component in stencil",
-      "Develop the team various frontend with accurate data vizualisations",
+      "Develop shareable components in Stencil",
+      "Develop various frontends for the team with accurate data visualisations",
       "Develop a skill management application"
     ],
     "technologies": [
@@ -124,7 +124,7 @@
     "startDate": "2015-09-01T00:00:00Z",
     "endDate": "2016-08-31T00:00:00Z",
     "tasks": [
-      "Creation of a bug tracking app for the team"
+      "Create a bug tracking app for the team"
     ],
     "technologies": [
       "Angularjs",

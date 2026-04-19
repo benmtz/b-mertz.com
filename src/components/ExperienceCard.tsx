@@ -16,7 +16,7 @@ export function ExperienceCard({
                     <div className='italic font-thin leading-3'>{experience.company}</div>
                 </div>
                 <div>
-                    <div className='leading-5'>{(new Date(experience.startDate)).toLocaleDateString(undefined, {month: "long", year: 'numeric'})} - {experience.endDate ? (new Date(experience.endDate)).toLocaleDateString(undefined, {month: "long", year: 'numeric'}) : "présent"}</div>
+                    <div className='leading-5'>{(new Date(experience.startDate)).toLocaleDateString(undefined, {month: "long", year: 'numeric'})} - {experience.endDate ? (new Date(experience.endDate)).toLocaleDateString(undefined, {month: "long", year: 'numeric'}) : "present"}</div>
                 </div>
             </h3>
             <ul className='pl-4 leading-5'>
